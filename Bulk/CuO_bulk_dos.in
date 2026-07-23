@@ -1,0 +1,6 @@
+&dos
+  prefix  = 'CuO_bulk',
+  outdir  = './tmp',
+  fildos  = 'CuO_bulk.dos',
+  DeltaE  = 0.01,
+/

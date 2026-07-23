@@ -1,0 +1,46 @@
+&control
+    calculation = 'vc-relax',
+    prefix      = 'CuO_relax',
+    outdir      = './tmp',
+    pseudo_dir  = './SSSP',
+    tstress     = .true.,
+    tprnfor     = .true.,
+/
+&system
+    ibrav   = 0,
+    nat     = 4,
+    ntyp    = 2,
+    ecutwfc = 90,
+    ecutrho = 720,
+    occupations = 'smearing',
+    smearing    = 'mp',
+    degauss     = 0.02,
+/
+&electrons
+    conv_thr    = 1.0d-8,
+    mixing_beta = 0.3,
+/
+&ions
+    ion_dynamics = 'bfgs',
+/
+&cell
+    cell_dynamics = 'bfgs',
+    press         = 0.0,
+/
+CELL_PARAMETERS angstrom
+4.68388    0.00000    0.00000
+0.00000    3.42268    0.00000
+-0.80063   0.00000    5.06564
+
+ATOMIC_SPECIES
+Cu  63.546  Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+O   15.999  O.pbe-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS crystal
+Cu  0.25000000  0.25122100  0.00000000
+Cu  0.75000000  0.74877900  0.50000000
+O   0.99112800  0.50887200  0.00000000
+O   0.51387200  0.48612800  0.25000000
+
+K_POINTS automatic
+6 6 6 0 0 0

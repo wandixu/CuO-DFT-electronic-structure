@@ -1,0 +1,44 @@
+&control
+    calculation = 'nscf',
+    prefix = 'CuO_bulk',
+    outdir = './tmp',
+    pseudo_dir = './SSSP',
+/
+&system
+    ibrav = 0,
+    nat = 4,
+    ntyp = 2,
+    ecutwfc = 90,
+    ecutrho = 720,
+    occupations = 'tetrahedra_opt',
+    nspin = 2,
+    starting_magnetization(1) = 0.5,   ! Cu（假设 type 1 是 Cu）
+    starting_magnetization(2) = 0.0,   ! O
+
+/
+&electrons
+    conv_thr = 1.0d-8,
+    mixing_beta = 0.3,
+    electron_maxstep = 200,
+/
+
+CELL_PARAMETERS angstrom
+ 5.146719750  -0.270125090   0.524493504
+-0.238899328   2.902259740  -0.097382859
+-0.031694249  -0.162875833   2.967937934
+
+ATOMIC_SPECIES
+Cu  63.546  Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+O   15.999  O.pbe-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS crystal
+Cu               0.2520630330        0.1320998275        0.0599513446
+Cu               0.7510497918        0.6294564926        0.5700610546
+O                0.9935998122        0.5684716994        0.0077222773
+O                0.5082873631        0.6649719805        0.1122653235
+
+K_POINTS automatic
+12 12 12 0 0 0
+
+HUBBARD (ortho-atomic)
+U Cu-3d 5.0

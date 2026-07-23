@@ -1,0 +1,6 @@
+
+&projwfc
+   prefix='CuO_bulk',
+   outdir='./tmp',
+   filpdos= 'CuO_bulk_pdos.dat'
+/
