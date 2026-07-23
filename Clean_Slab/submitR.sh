@@ -4,13 +4,10 @@
 #SBATCH --output=CuO_slab.%j.out
 #SBATCH --error=CuO_slab.%j.err
 #SBATCH --time=48:00:00
-#SBATCH --partition=parallel
+#SBATCH --partition=
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=12
 #SBATCH --export=ALL
-#SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=<your_email>
-
 
 module load anaconda3/2022.05
 conda create -n bader_env -c conda-forge bader -y
