@@ -1,0 +1,6 @@
+&dos
+  prefix  = 'CuO_111_slab_Ovac',
+  outdir  = './tmp',
+  fildos  = 'CuO_slab_Ovac.dos',
+  DeltaE  = 0.01,
+/

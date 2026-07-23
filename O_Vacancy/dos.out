@@ -1,0 +1,54 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+
+     Program DOS v.7.3.1 starts on 11Jan2026 at  5:40:11 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     156616 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ./tmp/CuO_111_slab_Ovac.save/
+     file Cu.pbe-dn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 3D renormalized
+     file O.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        4573    2281    645              1860957   657963   99181
+ 
+     Using Slab Decomposition
+ 
+
+     negative rho (up, down):  3.630E-04 2.736E-04
+
+     Optimized tetrahedron method used
+
+     [opt_tetra]  Optimized tetrahedron method is used.
+ 
+     DOS          :   1m44.20s CPU   1m47.29s WALL
+
+ 
+   This run was terminated on:   5:41:58  11Jan2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

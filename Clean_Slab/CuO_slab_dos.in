@@ -1,0 +1,6 @@
+&dos
+  prefix  = 'CuO_slab',
+  outdir  = './tmp',
+  fildos  = 'CuO_slab.dos',
+  DeltaE  = 0.01,
+/

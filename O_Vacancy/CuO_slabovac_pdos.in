@@ -1,0 +1,6 @@
+
+&projwfc
+   prefix='CuO_111_slab_Ovac',
+   outdir='./tmp',
+   filpdos= 'CuO_slab_Ovac_pdos.dat'
+/

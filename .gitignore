@@ -1,0 +1,32 @@
+# ---- OS / editor junk ----
+.DS_Store
+._*
+Thumbs.db
+*~
+
+# ---- Quantum ESPRESSO scratch / large intermediates ----
+tmp/
+*.save/
+*.wfc*
+*.igk*
+*.mix*
+*.hub
+*.bfgs
+_ph0/
+CRASH
+
+# ---- SLURM logs ----
+*.err
+*.o[0-9]*
+slurm-*.out
+
+# ---- Large post-processing files (regenerable) ----
+# Charge density cubes can be hundreds of MB; regenerate with pp.x if needed.
+*.cube
+# Verbose projwfc stdout logs (the DOS data itself is kept in *.dos / *.pdos.dat.*)
+pdos.out
+
+# ---- Python helpers, if any ----
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
